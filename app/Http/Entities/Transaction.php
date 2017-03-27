@@ -1,0 +1,11 @@
+<?php
+namespace App\Http\Entities;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Transaction extends Model
+{
+    public function transaction_details(){
+        return $this->hasMany('App\Http\Entities\TransactionDetails');
+    }
+}
